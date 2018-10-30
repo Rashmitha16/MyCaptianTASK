@@ -1,0 +1,100 @@
+<html>	
+	<head>
+		<style>
+		.center{
+					background-color:#0000ee;
+					height:20%;
+					position:absolute;
+					width:100%;
+					color:white;
+					top:0;
+					left:0;
+
+				}
+		#f1{
+				top:5px;
+				margin-left:800px;
+				height:50px;
+				width:180px;
+				z-index:3;
+			}
+		.a
+		{
+		top:25%
+		margin-left:400px;}
+		div.p{
+				margin-left:800px;
+			}
+				
+		</style>
+	</head>
+	<body>
+		<div class="center">
+			<div  style="text-align:center;font-size:50px;color:white;">Facebook</div>			
+			<div id="f1" >
+				<table>
+					<tr>
+						<td>Email:</td>
+						<td>Phone:</td>
+					</tr>
+					<tr>
+						<form><td><input type="text" name="email"/></td>
+							<td><input type="text" name="phone"/></td>
+							<td><input type="submit" value="Log In"/></td>
+						</form>
+					</tr>
+					<tr>
+						<td><input type="checkbox" />Keep me logged in</td>
+						<td>Forgot your password</td>
+					</tr>
+					
+				</table>
+
+			</div>
+		</div>		
+		<div class="a" style="background-image:url("fb.jpg");">facebook helps you connect and share with the people in your life</div>
+		<div class="p" style="position:absolute;top:20%">
+		<h1>Sign up</h1>
+			<h2> Create a new account</h2>
+			<h4>Its free and always  will be</h4>
+			<form name="aim" method="get">
+				<input type="text"  placeholder="First name"/>&nbsp&nbsp&nbsp
+				<input type="text" placeholder="Last name"/>
+				<br/><br/>
+				<input type="text" placeholder="Phone number or Email" size="47"/>
+				<br><br/>
+				<input type="text" placeholder="New password" size="47"/></br></br>
+				<label><b>Birthday</b></label><br><br>
+				<table >
+					<select name="date">
+						<script type="text/javascript">
+					
+							for(i=1;i<=31;i++)
+							document.writeln("<option>"+i+"</option>");
+						</script>
+					</select>
+					<select name="month">
+						<script type="text/javascript">
+					
+							for(i=1;i<=12;i++)
+							document.writeln("<option>"+i+"</option>");
+						</script>
+					</select>
+					<select name="year">
+						<script type="text/javascript">
+					
+							for(i=1980;i<=2018;i++)
+							document.writeln("<option>"+i+"</option>");
+						</script>
+					</select>
+				</table><br/>
+				<b>Gender</b>&nbsp <input type="radio"> Female &nbsp &nbsp 
+				<input type="radio"> Male<br>
+				<p>By clicking Sign Up,you agree to accept our Terms and that you
+				have read our Data policy and Cookie policy. You may
+				receive SMS notification from us and can opt out at anytime.</p>
+				<input type="submit" style="background-color:green;width:70px;height:40px" value ="Sign Up">
+			</form>
+		</div>
+	</body>
+</html>

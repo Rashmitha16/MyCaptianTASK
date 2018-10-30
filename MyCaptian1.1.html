@@ -1,0 +1,34 @@
+<html>
+	<head>
+	<script type="text/javascript">
+function validate(){
+		
+		Pass=register.Password.value;
+		if(Pass.length<8)
+		{
+			window.alert("Password should be more than 8 characters");
+			return false;
+		}
+		eam=register.Email.value;
+		 var reg=/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+		 if(reg.test(eam)==false)
+		{
+			window.alert("you have entered an invalid email address");
+			return false;
+		}
+		if(reg.test(eam)==true && Pass.length>=8)
+		{
+		document.writeln("Logged in");
+		}
+		
+	}
+	</script>
+	</head>
+	<body style="margin-top:100px">
+		<form name="register" action="registration.html" method="get"   onSubmit="return validate();">
+			Email-Id:<input type="text" name="Email" value=""><br>
+			Password:<input type="Password" name="Password" value=""><br>
+			<input type="submit" name="submit" value="submit">
+		</form>
+	</body>
+	</html>
